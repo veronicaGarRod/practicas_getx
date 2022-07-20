@@ -14,6 +14,7 @@ class UserView extends StatelessWidget {
         appBar: AppBar(title:Text("Usuarios")),
         body: Container(
             child: GetBuilder<UserController> (
+              id:"listuser",
               builder:(_) {
               return ListView.builder(
               itemCount: _.users.length,

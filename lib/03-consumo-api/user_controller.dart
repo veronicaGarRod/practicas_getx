@@ -9,6 +9,7 @@ List<User> users =[];
   @override
   void onInit() async {
    users= await _apiuser.getAllUsers();
+    update(["listuser"]);
     super.onInit();
   }
   @override
