@@ -1,8 +1,10 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:practicas_getx/01-Contador/contador_view.dart';
 import 'package:practicas_getx/05-reactivos/contador_reactivo_view.dart';
 import 'package:practicas_getx/05-reactivos/user_api_view.dart';
+import 'package:practicas_getx/06-custom_painter/headersc.dart';
 import '03-consumo-api/user_view.dart';
 
 void main() {
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:UserApiView(),
+      home:Headersc(),
     );
   }
 }
