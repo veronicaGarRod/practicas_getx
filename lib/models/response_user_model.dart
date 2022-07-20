@@ -1,3 +1,5 @@
+import 'package:get/get.dart';
+
 class ResponseUserModel {
     ResponseUserModel({
        required  this.page,
@@ -48,6 +50,7 @@ class User {
     String firstName;
     String lastName;
     String avatar;
+    RxBool isfavorite= RxBool(false);
 
     factory User.fromJson(Map<String, dynamic> json) => User(
         id: json["id"],

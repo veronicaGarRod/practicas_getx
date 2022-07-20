@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:practicas_getx/01-Contador/contador_view.dart';
+import 'package:practicas_getx/05-reactivos/contador_reactivo_view.dart';
+import 'package:practicas_getx/05-reactivos/user_api_view.dart';
 import '03-consumo-api/user_view.dart';
 
 void main() {
@@ -14,10 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:UserView(),
+      home:UserApiView(),
     );
   }
 }
