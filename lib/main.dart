@@ -6,6 +6,7 @@ import 'package:practicas_getx/05-reactivos/contador_reactivo_view.dart';
 import 'package:practicas_getx/05-reactivos/user_api_view.dart';
 import 'package:practicas_getx/06-custom_painter/headersc.dart';
 import '03-consumo-api/user_view.dart';
+import '07-crud/user_crud_api_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:Headersc(),
+      home:UserCrudApiView(),
     );
   }
 }
